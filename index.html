@@ -3,15 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
+    <style>
+        #footer-style {
+            background-color: #2D2E2F;
+            color: whitesmoke;
+           font-size: small;
+            width: auto;
+            border-radius: 5px;
+            margin: 1px;
+            padding: 20px
+
+        }
+        #area {
+            
+            background-color: #c3ccd1;
+
+            width: 600px;
+            
+            border-radius: 5px;
+            padding:15px;
+            margin: 5px;
+            text-align: center;
+            color: white;   
+           float: left;
+        }
+        #sub-area {
+            background-color: #7EBABA;
+            width: auto;
+            border-radius: 1px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 10px;
+            
+        }
+        #h1-style {
+            background-color: bisque;
+            color: purple;
+            height: 100px;
+        }
+        #sideline {
+            float:left;
+            height: 500px;
+            background-color:aquamarine;
+            color: #2D2E2F;
+            padding: 10px;
+            margin:5px  
+
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to my first Webpage</h1>
-    <p>This is my first webpage and I'm excited ti learn about HTML.</p>
-    <p>In this webpage, I will be sharing information about my hobbies and interests</p>
-    <img src="./pictures/tux.jpeg" alt="An image of tux" width="100"/>
-    <p>Check out newest kernel at kernel.org <a href="https://kernel.org/">here</a> if you want</p>
+    <h1 id="h1-style">Welcome to my first Webpage</h1>
 
-    <p><a href="https://kubuntu.org/"><img src="./pictures/kineticbanner.jpg" width="700"/></a></p>
+    <article id="area">
+        <p>article</p>
+        <p>This is my first webpage and I'm excited ti learn about HTML.</p>
+        <section id="sub-area">
+            <p>Check out newest kernel at kernel.org <a href="https://kernel.org/">here</a> if you want</p>
+            <p>section</p>
+        </section>
+        <section id="sub-area">
+            <p>section2</p>
+            
+        </section>
+        <section id="sub-area">
+            <p>In this webpage, I will be sharing information about my hobbies and interests</p> 
+            <p>Moikka </p>
 
+        </section>
+        <section id="sub-area">
+            <p>text</p>
+            <p>Why no pic here???</p>
+            <p><a href="./pictures/tux.jpeg" width="100px"></a></p>
+            <p>text</p>
+        </section>
+    </article>
+    
+   
+    <div id="sideline">
+       
+        <p>text here is a box</p>
+        <p><a href="./pictures/tux.jpeg" width="100px"></a></p>
+        
+
+    </div>
+    
+    
+   
+
+    <p><a href="https://kubuntu.org/"><img src="./pictures/kineticbanner.jpg" width="700px"/></a></p>
+
+
+
+    <footer id="footer-style">
+        <div>
+            <p>
+                This is my fisrt page and there is abolutely no copyright issues here. 
+            </p>
+
+        </div>
+        <div>
+            <p>
+                Some text here as well
+
+            </p>
+        </div>
+    </footer>
+    <a href="./pictures/tux.jpeg" width="300px"></a>
 </body>
 </html>
